@@ -1,8 +1,11 @@
 import { useMemo } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import Slideshow from './components/Slideshow'
 import Categories from './components/Categories'
 import Featured from './components/Featured'
+import Highlights from './components/Highlights'
+import Articles from './components/Articles'
 
 function App() {
   // Legge query param per categoria
@@ -16,8 +19,11 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <Slideshow />
+        <Highlights />
         <Categories />
         <Featured selectedCategory={selectedCategory} />
+        <Articles />
         <section id="offerte" className="py-12 sm:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="rounded-2xl overflow-hidden bg-gradient-to-r from-indigo-600 to-fuchsia-600 p-8 sm:p-12 text-white shadow-xl">
